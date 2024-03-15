@@ -617,7 +617,7 @@ p {
   flex-direction: column;
   align-items: baseline;
   justify-content: end;
-  min-height: 224px;
+  min-height: 220px;
   max-width: 160px;
   background-repeat: no-repeat;
   background-position: top;
@@ -631,7 +631,7 @@ p {
 
 .playlist__card-info {
   width: 160px;
-  padding: 10px 15px;
+  padding: 10px 12px;
   border: 1px solid #A1A6B4;
   background-color: #fff;
 }
