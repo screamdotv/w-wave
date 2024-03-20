@@ -51,7 +51,7 @@
   }
 
   .podcasts__container {
-    padding-bottom: 85px;
+    padding-bottom: 93px;
   }
 
   .archive {
@@ -62,16 +62,6 @@
   .show__container {
     padding-bottom: 91px;
     gap: 55px;
-  }
-
-  .show__list {
-    display: block;
-    columns: 2;
-    max-width: 638px;
-  }
-
-  .show__items:not(:nth-child(3n)) {
-    margin-bottom: 30px;
   }
 
   .show__card {
@@ -89,7 +79,7 @@
   .playlist__container {
     flex-direction: column;
     gap: 25px;
-    padding-bottom: 76px;
+    padding-bottom: 90px;
   }
 
   .playlist__description {
@@ -98,17 +88,21 @@
   }
 
   .playlist__list {
-    columns: 3;
     padding-top: unset;
+    justify-content: center;
   }
 
   .playlist__card {
-    align-items: end;
-    min-height: 112px;
-    max-width: 100%;
-    padding-left: 111px;
-    background-position: top 0 left 0;
-    background-size: contain;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 115px;
+    min-width: 254px;
+    width: 100%;
+  }
+
+  .playlist__img {
+    max-width: 112px;
+    width: 100%;
   }
 
   .playlist__card-flag {
@@ -117,7 +111,7 @@
 
   .playlist__card-info {
     width: 100%;
-    padding: 34px 8px;
+    padding: 38px 0 36px 8px;
   }
 
   .playlist__card-title {
@@ -184,12 +178,12 @@
   }
 
   .form__btn {
-    padding: 21px 54px;
+    padding: 25px 54px;
   }
 
   .footer__container {
     padding-top: 96px;
-    padding-bottom: 89px;
+    padding-bottom: 106px;
   }
 }
 
@@ -274,15 +268,13 @@
   }
 
   .podcasts__container {
-    padding-bottom: 92px;
+    padding-top: 91px;
+    padding-bottom: 96px;
   }
 
   .podcasts__list {
     columns: unset;
-  }
-
-  .podcasts__item:not(:last-child) {
-    margin-bottom: 30px;
+    row-gap: 28px;
   }
 
   .show__container {
@@ -291,7 +283,7 @@
   }
 
   .show__title {
-    padding-bottom: 110px;
+    margin-bottom: 118px;
   }
 
   .show__list {
@@ -299,12 +291,13 @@
   }
 
   .playlist__list {
-    columns: 2;
+    row-gap: 30px;
+    column-gap: 28px;
   }
 
   .playlist__container {
     gap: 20px;
-    padding-bottom: 98px;
+    padding-bottom: 109px;
   }
 
   .advertisement__product {
@@ -380,11 +373,24 @@
   }
 
   .footer__container {
-    padding-bottom: 70px;
+    padding-bottom: 84px;
   }
 }
 
 @media (max-width: 768px) {
+
+  .podcasts__item {
+    width: 100%;
+  }
+
+  .hero__container {
+    padding-top: 88px;
+    padding-bottom: 89px;
+  }
+
+  .hero__description {
+    margin-bottom: 20px;
+  }
 
   .product__info {
     background-image: url("../img/footer-line.svg");
@@ -416,24 +422,53 @@
   .advertisement__product {
     min-height: 1078px;
   }
+
   .about-us__container {
+    padding-top: 90px;
     background-image: url("../img/about-us-deco-768.svg");
-    background-position-y: 465px;
+    background-position-y: 471px;
+    background-position-x: 0px;
   }
 
   .about-us__top-content {
-    margin-bottom: 166px;
+    margin-bottom: 171px;
   }
 
   .persone-card {
     min-height: 361px;
   }
 
+  .about-us__item:nth-child(1) .persone-card {
+    background-position-x: -126px;
+  }
+
+  .about-us__item:nth-child(2) .persone-card {
+    background-position-x: -8px;
+  }
+
+  .about-us__item:nth-child(3) .persone-card {
+    background-position-x: -70px;
+  }
+
+  .about-us__item:nth-child(3) .persone-card {
+    background-position-x: -76px;
+  }
+
+  .about-us__middle-content {
+    margin-bottom: 30px;
+  }
+
   .form {
     gap: 28px;
   }
 
+  .form__textarea {
+    padding-top: 29px;
+  }
 
+  .footer__logo {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -451,14 +486,10 @@
     width: 100%;
   }
 
-  .playlist__list {
-    columns: 3;
-  }
-
   .playlist__card {
+    flex-direction: column;
     min-height: 159px;
-    max-width: 113px;
-    padding-left: unset;
+    min-width: 113px;
   }
 
   .playlist__card-flag {
@@ -467,6 +498,7 @@
 
   .playlist__card-info {
     padding: 8px 8px;
+    max-width: 113px;
   }
 
   .playlist__card-name {
@@ -534,7 +566,7 @@
 
   .podcasts__container {
     padding-top: 54px;
-    padding-bottom: 64px;
+    padding-bottom: 52px;
   }
 
   .podcasts__title {
@@ -543,6 +575,7 @@
 
   .podcasts__card {
     max-width: 256px;
+    min-height: 187px;
     margin: 0 auto;
     padding: 95px 0 23px 15px;
   }
@@ -558,31 +591,31 @@
   }
 
   .podcasts__item:nth-child(2) .podcasts__card {
-    background-image: url("../img/podcast-2-320.png");
-  }
-
-  .podcasts__item:nth-child(3) .podcasts__card {
-    background-image: url("../img/podcast-3-320.png");
-  }
-
-  .podcasts__item:nth-child(4) .podcasts__card {
-    background-image: url("../img/podcast-4-320.png");
-  }
-
-  .podcasts__item:nth-child(5) .podcasts__card {
     background-image: url("../img/podcast-5-320.png");
   }
 
-  .podcasts__item:nth-child(6) .podcasts__card {
+  .podcasts__item:nth-child(3) .podcasts__card {
+    background-image: url("../img/podcast-2-320.png");
+  }
+
+  .podcasts__item:nth-child(4) .podcasts__card {
     background-image: url("../img/podcast-6-320.png");
   }
 
-  .podcasts__item:nth-child(7) .podcasts__card {
+  .podcasts__item:nth-child(5) .podcasts__card {
+    background-image: url("../img/podcast-3-320.png");
+  }
+
+  .podcasts__item:nth-child(6) .podcasts__card {
     background-image: url("../img/podcast-7-320.png");
   }
 
+  .podcasts__item:nth-child(7) .podcasts__card {
+    background-image: url("../img/podcast-4-320.png");
+  }
+
   .podcasts__item:nth-child(8) .podcasts__card {
-    background-image: url("../img/podcast-8.png");
+    background-image: url("../img/podcast-8-320.png");
   }
 
   .show__container {
@@ -591,7 +624,7 @@
   }
 
   .show__title {
-    padding-bottom: 20px;
+    margin-bottom: 26px;
   }
 
   .show__card {
@@ -605,7 +638,8 @@
     display: flex;
     flex-direction: column;
     min-height: 98px;
-    padding: 9px 5px;
+    width: 113px;
+    padding: 9px 8px 9px 8px;
     background-color: #fff;
   }
 
@@ -620,6 +654,7 @@
 
   .show__list {
     margin-bottom: 62px;
+    column-gap: 28px;
   }
 
   .show__list::after {
@@ -654,12 +689,16 @@
 
   .guest__description {
     font-size: 14px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   .guest__card {
     min-height: 524px;
     max-width: 256px;
+  }
+
+  .guest__card-info {
+    min-height: 357px;
   }
 
   .guest__biography {
@@ -680,15 +719,11 @@
   .playlist__container {
     gap: 27px;
     padding-top: 54px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
   }
 
   .playlist__description {
     font-size: 12px;
-  }
-
-  .playlist__list {
-    columns: 2;
   }
 
   .playlist__card {
@@ -730,7 +765,7 @@
   }
 
   .btn__advertisment {
-    max-width: 247px;
+    max-width: 255px;
     font-size: 16px;
     padding: 13px 12px;
     border: 2px solid #F0D288;
@@ -749,7 +784,7 @@
   }
 
   .about-us__top-content {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   .top-content__description {
@@ -758,25 +793,27 @@
   }
 
   .persone-card {
-    min-height: 219px;
+    min-height: 216px;
     padding-top: 110%;
   }
 
   .persone-card__name {
     font-size: 14px;
+    font-weight: 500;
   }
 
   .persone-card__description {
     font-size: 12px;
+    line-height: 140%;
   }
 
   .about-us__list {
-    row-gap: 25px;
-    column-gap: 24px;
+    row-gap: 28px;
+    column-gap: 28px;
   }
 
   .persone-card {
-    background-size: 160%;
+    background-size: 156%;
     background-position-x: unset;
   }
 
@@ -801,7 +838,7 @@
   }
 
   .about-us__middle-content {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .form__textarea {
@@ -838,12 +875,13 @@
 
   .footer__container {
     padding-top: 55px;
-    padding-bottom: 42px;
+    padding-bottom: 45px;
+    align-items: baseline;
   }
 
   .footer__list {
     columns: 2;
-    column-gap: 100px;
+    column-gap: 78px;
   }
 
   .footer__list-item {
@@ -855,6 +893,11 @@
   }
 
   .footer {
-    background-position: bottom 29px left 0;
+    background-position: bottom 32px left 0;
   }
+
+  .footer__left-block {
+    margin: 0 auto 68px auto;
+  }
+
 }
