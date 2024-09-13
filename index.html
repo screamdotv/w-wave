@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W-Wave</title>
 
-  <link rel="stylesheet" href="/./css/normalize.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
@@ -20,11 +20,11 @@
       <a href="/" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
       <nav class="header__menu menu">
         <ul class="menu__list">
-          <li class="menu__list-item"><a href="/" class="menu__item-link">Подкасты</a></li>
-          <li class="menu__list-item"><a href="/" class="menu__item-link">Передачи</a></li>
-          <li class="menu__list-item"><a href="/" class="menu__item-link">Гости</a></li>
-          <li class="menu__list-item"><a href="/" class="menu__item-link">Плейлисты</a></li>
-          <li class="menu__list-item"><a href="/" class="menu__item-link">О&nbsp;нас</a></li>
+          <li class="menu__list-item"><a href="#podcastsId" class="menu__item-link">Подкасты</a></li>
+          <li class="menu__list-item"><a href="#showId" class="menu__item-link">Передачи</a></li>
+          <li class="menu__list-item"><a href="#guestsId" class="menu__item-link">Гости</a></li>
+          <li class="menu__list-item"><a href="#playlistId" class="menu__item-link">Плейлисты</a></li>
+          <li class="menu__list-item"><a href="#aboutUsId" class="menu__item-link">О&nbsp;нас</a></li>
         </ul>
       </nav>
       <button aria-label="Кнопка поиска" class="header__search btn-reset">
@@ -49,7 +49,7 @@
         <a href="/" class="hero__btn btn-reset">Слушать эфир</a>
       </div>
     </section>
-    <section class="podcasts">
+    <section id="podcastsId" class="podcasts">
       <div class="container podcasts__container">
         <h2 class="podcasts__title">Подкасты</h2>
         <ul class="podcasts__list">
@@ -125,7 +125,7 @@
         </ul>
       </div>
     </section>
-    <section class="show">
+    <section id="showId" class="show">
       <div class="container show__container">
         <h2 class="show__title">Передачи</h2>
         <ul class="show__list">
@@ -232,7 +232,7 @@
         </div>
       </div>
     </section>
-    <section class="guests">
+    <section id="guestsId" class="guests">
       <div class="container guests__container">
         <h2 class="guests__title">Гости</h2>
         <p class="guest__sub-title">У&nbsp;нас бывают:</p>
@@ -277,7 +277,7 @@
         </ul>
       </div>
     </section>
-    <section class="playlist">
+    <section id="playlistId" class="playlist">
       <div class="container playlist__container">
         <div class="playlist__info">
           <h2 class="playlist__title">Плейлисты</h2>
@@ -450,7 +450,7 @@
         </div>
       </div>
     </aside>
-    <section class="about-us">
+    <section id="aboutUsId" class="about-us">
       <div class="container about-us__container">
         <h2 class="about-us__title">О&nbsp;нас</h2>
         <div class="about-us__top-content top-content">
